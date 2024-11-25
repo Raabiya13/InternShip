@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.google.com/">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Welcome.css') }}">
+
+</head>
+<body>
+    <!-- <style>
+        body{
+            background-color: black;
+        
+        }
+        
+        .navbar{
+            background-color: #12062e;
+        }
+        
+        .navbar :hover{
+            color: rgb(253, 253, 253);
+        }
+        
+        #mainNavbar .nav-link{
+            color: rgb(21, 6, 56);
+        }
+        
+        #mainNavbar .nav-link:hover{
+            color: #ffffff;
+        }
+        
+        .nb{
+            font-family: "Geist Mono", monospace;
+        }
+        
+        .main{
+            text-align: center;;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .container {
+            width: 450px;
+            height: 200px;
+            position: relative;
+            margin: 30px;
+            padding-top: 15rem;
+            padding-left: 10rem;
+            padding-right:10rem;
+            padding-bottom: 19.5rem;
+          }
+          .box {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 8%;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            background: #060606;
+           
+            
+          }
+          .overlay {
+            z-index: 2;
+            margin: 30px;
+            background: rgb(45, 23, 92);
+            padding-bottom: 25px;
+            
+          }
+        
+        
+          .title{
+            color: white;
+            font-family: "Alice", serif;
+            padding-top: 15rem;
+            padding-left: 10rem;
+            padding-right:10rem;
+          }
+        
+          .sub{
+            font-family:"Montserrat", sans-serif;
+            font-size: smaller;
+            color: rgba(157, 166, 174, 0.448);
+          }
+    </style> -->
+
+
+
+
+
+    
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navlinks">
+                <ul class="navbar-nav">
+                    <li class="nav-items">
+                        <a href="/" class="nav-link">Home</a>  <!-- Make sure href has a proper link -->
+                    </li>
+                    <li class="nav-items">
+                        <a href="/about" class="nav-link">About</a>  <!-- Replace with actual route -->
+                    </li>
+                    <li class="nav-items">
+                        <a href="/signup" class="nav-link">Sign up</a>  <!-- Replace with actual route -->
+                    </li>
+                </ul>
+            </div>
+            <section>
+                <a class="nb navbar-brand fix-top" href="/">Skill Based Job Matcher 🤖</a> <!-- Ensure it's pointing to the homepage -->
+            </section>
+        </nav>
+        
+    
+    <center>
+     <div class="container justify-content-center">
+        <div class="box align-item-center">
+            
+        </div>
+        <div class="box overlay justify-content-center">
+            <h3 id="genai-link" class="title">GenAI.</h3>
+            <h5 class="sub">powered by gemini.</h5></div>
+      </div>
+    </center>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+   
+    <script>
+        // JavaScript to redirect when "GenAI" is clicked
+        document.getElementById('genai-link').addEventListener('click', function() {
+            window.location.href = "/start";  // Redirect to the Flask route for job.html
+        });
+
+        document.querySelector('.box').addEventListener('mouseenter',function() {
+            alert("Click GenAI.");
+        });
+
+        // Example: Avoid unnecessary redirects
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent the default link behavior
+        // Handle custom actions like showing content without redirecting
+            });
+        });
+
+    </script>
+
+</body>
+</html>
