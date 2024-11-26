@@ -77,3 +77,14 @@ body{
     font-size: smaller;
     color: rgba(157, 166, 174, 0.448);
   }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black; /* Optional: Set your preferred background color */
+    z-index: -1; /* Ensures the animation stays behind other elements */
+  }
+  
