@@ -38,18 +38,33 @@ chat = mymodel.start_chat()
 
 # Predefined domains and subdomains
 domains = {
-    "Full-Stack Development": ["Front-End", "Back-End", "DevOps"],
+    "Full-Stack Development": ["Front-End", "Back-End","MERN Stack", "MEAN Stack", "DevOps"],
     "Data Science": ["Data Analysis", "Machine Learning", "Big Data"],
     "Digital Marketing": ["SEO", "Social Media", "Content Marketing"],
     "UI/UX": ["Figma", "Adobe XD", "Canva",""],
     "Graphic Design": ["Illustration", "Logo Design", "UI Design"],
+    "Cyber Security": ["Network Security", "Ethical Hacking", "Cryptography", "SIEM Tools", "Penetration Testing"],
+    "Networking": ["CCNA", "CCNP", "Network Security", "Wireless Networking", "Network Troubleshooting"],
+    "System Administration": ["Linux Administration", "Windows Server", "VMware", "Cloud Systems"],
+    "Embedded Systems": ["Arduino", "Raspberry Pi", "FPGA Programming", "Microcontrollers", "C Programming"],
+    "IoT": ["IoT Protocols", "IoT Security", "IoT Development Tools", "Smart Devices"],
+    "Design/Animation": ["Graphic Design","UI/UX Design","Product Design","Animation"],
+    "Something Else": ["Marketing","Content Writing","HR","Sales"],
 }
 
 skills = {
     "Front-End": ["HTML/CSS", "JavaScript", "React", "Vue.js", " Angular","Responsive Design, Bootstrap","Version Control (Git)"],
-    "Back-End": ["Node.js", "Django", "Flask", "Spring Boot"],
+    "Back-End": ["Node.js", "Django", "Flask", "Spring Boot","Ruby on Rails"],
     "DevOps": ["Docker, Kubernetes", "CI/CD Tools (Jenkins, Travis CI)", "Cloud Platforms (AWS, Azure, Google Cloud)", "Infrastructure as Code (Terraform, Ansible)"],
-
+    "Data Analysis": ["Python", "R", "SQL", "TensorFlow", "Pandas", "Scikit-Learn"],
+    "Graphic Design": ["Adobe Photoshop", "Illustrator", "CorelDRAW", "Canva"],
+    "UI/UX Design": ["Figma", "Sketch", "Adobe XD", "Prototyping Tools", "Wireframing"],
+    "Product Design": ["3D Modeling", "SolidWorks", "AutoCAD", "3D Printing"],
+    "Animation": ["Blender", "Maya", "After Effects", "2D Animation", "3D Animation"],
+    "Marketing": ["Digital Marketing", "SEO", "Social Media Marketing", "Google Ads"],
+    "Content Writing": ["Blog Writing", "Technical Writing", "Creative Writing", "Copywriting"],
+    "HR": ["Recruitment", "Payroll Management", "Employee Engagement", "Conflict Resolution"],
+    "Sales": ["B2B Sales", "B2C Sales", "CRM Tools", "Cold Calling"]
 }
 
 @app.route('/')
