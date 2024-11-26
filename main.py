@@ -40,8 +40,6 @@ chat = mymodel.start_chat()
 domains = {
     "Full-Stack Development": ["Front-End", "Back-End","MERN Stack", "MEAN Stack", "DevOps"],
     "Data Science": ["Data Analysis", "Machine Learning", "Big Data"],
-    "Digital Marketing": ["SEO", "Social Media", "Content Marketing"],
-    "UI/UX": ["Figma", "Adobe XD", "Canva",""],
     "Graphic Design": ["Illustration", "Logo Design", "UI Design"],
     "Cyber Security": ["Network Security", "Ethical Hacking", "Cryptography", "SIEM Tools", "Penetration Testing"],
     "Networking": ["CCNA", "CCNP", "Network Security", "Wireless Networking", "Network Troubleshooting"],
