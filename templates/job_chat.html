@@ -7,9 +7,10 @@
     <title>Skill-Based Job Matching Chat</title>
 </head>
 <body>
+    <div id="particles-js"></div>
 <div class="chat-container">
     <div class="head chat-header">
-        Skill-Based Job Matcher
+        Skill-Based Job Matcher💻
     </div>
     <div class="chat-box">
         {% if message %}
@@ -51,5 +52,80 @@
         {% endif %}
     </div>
 </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS('particles-js', {
+        "particles": {
+          "number": {
+            "value": 100,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff" /* White particles */
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#ffffff" /* Optional: White stroke */
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": true
+          },
+          "size": {
+            "value": 5,
+            "random": true
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff", /* White connecting lines */
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            }
+          },
+          "modes": {
+            "repulse": {
+              "distance": 100
+            },
+            "push": {
+              "particles_nb": 4
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
 </body>
 </html>
